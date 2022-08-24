@@ -17,28 +17,29 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: Drawer(),
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 7, 255, 234),
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-            Image.asset(
-              "images/xylophone.png",
-              scale: 15,
-            ),
-            SizedBox(width: 13),
-            Text(
-              "Xylophone Game",
-              style: TextStyle(fontSize: 27, fontFamily: "Pacifico"),
-            ),
-          ]),
+        // drawer: Drawer(),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(70),
+          child: AppBar(
+            backgroundColor: Color.fromARGB(255, 7, 255, 234),
+            title: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Image.asset(
+                "images/xylophone.png",
+                scale: 15,
+              ),
+              SizedBox(width: 13),
+              Text(
+                "Xylophone Game",
+                style: TextStyle(fontSize: 27, fontFamily: "Pacifico"),
+              ),
+            ]),
+          ),
         ),
         body: Column(
           children: [
             SizedBox(
               width: double.infinity,
-              height: 95,
+              height: 93,
               child: RaisedButton(
                 splashColor: Color.fromARGB(255, 122, 235, 124),
                 child: Text(
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 95,
+              height: 93,
               child: RaisedButton(
                 splashColor: Color.fromARGB(255, 255, 238, 89),
                 child: Text(
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 95,
+              height: 93,
               child: RaisedButton(
                 splashColor: Colors.orange,
                 child: Text(
@@ -86,7 +87,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 95,
+              height: 93,
               child: RaisedButton(
                 splashColor: Colors.red,
                 child: Text(
@@ -102,7 +103,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 94,
+              height: 93,
               child: RaisedButton(
                 splashColor: Color.fromARGB(255, 227, 131, 163),
                 child: Text(
@@ -118,7 +119,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 94,
+              height: 91,
               child: RaisedButton(
                 splashColor: Colors.purple,
                 child: Text(
@@ -134,7 +135,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(
               width: double.infinity,
-              height: 94,
+              height: 91,
               child: RaisedButton(
                 splashColor: Colors.blueAccent,
                 child: Text(
